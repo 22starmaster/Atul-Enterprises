@@ -3,13 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta mane="Atul Enterprises" content="Buy Flats in the palghar">
+    <meta mane="description" content="Buy Flats in the palghar">
     <meta name="keywords" content="building, flats, rent, buy">
     <title>Atul Enterprises</title>
     <link rel="stylesheet" href="./style.css">
     <style> 
         body{
             background-color: white;
+        }
+
+        .form-container {
+            margin-right: 40px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 450px;
+            text-align: center;
+        }
+  
+        h2 {
+            margin-bottom: 20px;
+        }
+  
+        label {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            display: block;
+            font-weight: bold;
+            text-align: left;
+            margin: 10px 0 5px;
+        }
+  
+        input, select {
+            width: 85%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+  
+        button {
+            background: #b98e32;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+  
+        button:hover {
+            background-color: #b98e5b;
+        }  
+  
+        input:focus, select:focus {
+            border-color: #b98e32;
+            outline: none;
+            box-shadow: 0 0 5px rgba(255, 207, 73, 0.5);
         }
 
         .dp{
@@ -22,15 +76,35 @@
             transition:box-shadow 0.1s ease-in;
         }
 
+        .dp1{
+            margin-left: 0px;
+            margin-right: 0px;
+            height: 375px; 
+            width: 575px;
+            border: 2px solid black;
+            border-radius: 10px;
+            transition:box-shadow 0.1s ease-in;
+        }
+
         iframe{
             border-radius: 10px;
+        }
+
+        .grid-container2{
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 1fr 1fr;
+            gap: 100px;
+            width: 100%;
+            height: 80%;
+            background-color: white;
         }
 
         .grid-container1{
             display: grid;
             justify-content: center;
             grid-template-columns: 1fr 1fr;
-            gap: 25px;
+            gap: 100px;
             width: 80%;
             height: 80%;
             background-color: white;
@@ -55,7 +129,7 @@
             text-align: center;
         }
 
-        .grid-item .container{
+        .grid-item .container1{
             background-color: #b98e32;
             color: rgb(255, 255, 255);
             font-size: 30px; 
@@ -65,7 +139,7 @@
             border-radius: 7.5px;
         }
 
-        .grid-item .container:hover{
+        .grid-item .container1:hover{
             height: 405px;
             width: 325px;
         }
@@ -79,6 +153,22 @@
             height: 400px;
             width: 650px;
             box-shadow: 10px black;
+        }
+
+        .grid-item1 .dp{
+            max-width: 150%;
+            height: auto;
+        }
+
+        .grid-item1 .dp:hover{
+            height: 400px;
+            width: 650px;
+            box-shadow: 10px black;
+        }
+
+        .grid-item2 .dp{
+            max-width: 175%;
+            height: auto;
         }
 
         #p1{
@@ -127,29 +217,71 @@
             border: 2px solid black;
             border-radius: 5px;
         }
+        .slogan{
+            border: 3px solid black;
+            border-radius: 3px;
+        }
     </style>
 </head>
 <body>
     <!--Header-->
     <header>
-        <div>
-            <img src="./6.jpg" class="icon" alt="Image Failed to Load!!">
-            Atul Enterprises
+        <div class="container">
+            <h1 class="logo">Atul Enterprises</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Project</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <a href="./index.html">&nbsp;Home&nbsp;</a>
-            <a href="#about">&nbsp;About&nbsp;</a>
-            <a href="#projects">&nbsp;Projects&nbsp;</a>
-            <a href="#contact">&nbsp;Contact&nbsp;</a>
-        </nav>
     </header>
     <!--Section-->
     <section>
-        <br>
-        <div align="center">
-            <img src="./5.png" height="550" width="1100">
-        </div>
-        <br>
+        <br><br><br><br><br>
+        <center>
+            <div class="grid-container2">
+                <div class="grid-item2">
+                    <br><br><br>
+                    <img src="./img49.jpg" class="dp">
+                </div>
+                <div class="form-container">
+                    <h2>Contact Us</h2>
+                    <form>
+                      <label for="name">Full Name</label>
+                      <input type="text" id="name" placeholder="Enter your name" required>
+                  
+                      <label for="email">Email</label>
+                      <input type="email" id="email" placeholder="Enter your email" required>
+                  
+                      <label for="mobile">Mobile No.</label>
+                      <input type="tel" id="mobile" placeholder="Enter your mobile number" required>
+                  
+                      <label for="referral">Who told you about us?</label>
+                      <select id="referral">
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="friend">Friend</option>
+                        <option value="social_media">Social Media</option>
+                        <option value="website">Website</option>
+                        <option value="other">Other</option>
+                      </select>
+                  
+                      <button type="submit">Submit</button>
+                    </form>
+                  </div>
+            </div>
+        </center>
+        <br><br><br><br><br>
             <fieldset id="about">
                 <legend>&nbsp;About&nbsp;</legend>
                 <br>
@@ -215,21 +347,21 @@
                 <center>
                     <div class="grid-container">
                         <div class="grid-item">
-                            <div class="container">
+                            <div class="container1">
                                 <img src="./img49.jpg" class="image1">
                                 <p>DANDEKAR'S GANDHAKOSH</p>
                                 <a href="#">View More</a>
                             </div>
                         </div>
                         <div class="grid-item">
-                            <div class="container">
+                            <div class="container1">
                                 <img src="./1.jpg" class="image1">
                                 <p>DANDEKAR RESIDENCY</p>
                                 <a href="#">View More</a>
                             </div>
                         </div>
                         <div class="grid-item">
-                            <div class="container">
+                            <div class="container1">
                                 <img src="./1.jpg" class="image1">
                                 <p>Other Projects In Association</p>
                                 <a href="#">View More</a>
