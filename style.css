@@ -1,5 +1,5 @@
 header{
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgb(255, 255, 255);
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;   
@@ -7,6 +7,7 @@ header{
 }
 
 .footer{
+    text-align: center;
     border-top: 1px solid grey;
     background-color: rgba(0, 0, 0, 0);
     color: black;
@@ -16,8 +17,15 @@ header{
 }
 
 nav{
-    padding: 0px 100px 0px 0px;
+    padding: 0px 0px 0px 850px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.226);
+}
+
+fieldset{
+    margin-left: 12.5px;
+    margin-right: 12.5px;
+    border: 2px solid black;
+    border-radius: 10px;
 }
 
 a:link{
@@ -64,12 +72,11 @@ a:hover{
 
 .contact-item{
     margin: 20px auto 20px 80px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .contact_container1{
     width: 1275px; 
-    height: 970px; 
+    height: 2600px; 
     border:2px solid black; 
     border-radius: 15px;
     align-items: center;
