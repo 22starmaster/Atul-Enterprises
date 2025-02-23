@@ -3,59 +3,262 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Atul Enterprises" content="Atul Enterprises Information">
-    <meta name="keywords" content="buildings, flats, home, house, rent, buy">
+    <meta mane="Atul Enterprises" content="Buy Flats in the palghar">
+    <meta name="keywords" content="building, flats, rent, buy">
     <title>Atul Enterprises</title>
     <link rel="stylesheet" href="./style.css">
-    <style>
+    <style> 
         body{
             background-color: rgba(255, 255, 255, 0.932);
         }
 
-        .image{
-            margin-top: 15px;
-            margin-left: 15px;
+        .dp{
+            margin-left: 0px;
+            margin-right: 0px;
+            height: 325px; 
+            width: 525px;
             border: 2px solid black;
             border-radius: 10px;
-            transition: 0.5s ease-in;
+            transition:box-shadow 0.1s ease-in;
         }
 
-        .image:hover{
-            background-image: url(./2.png);
-            background-size: 490px;
-            background-position: right;
-            background-repeat: no-repeat;
-            background-color: rgb(255, 255, 255);
-            color: black;
-            padding: 0px 782px 0px 0px;
+        iframe{
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+
+        .grid-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1 fr 1fr;
+            gap: 30px;
+            width: 80%;
+            height: 80%;
+            background-color: white;
+        }
+        .grid-item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ffffff;
+            background-color: #ffffff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .grid-item .container{
+            background-color: #b98e32;
+            color: rgb(255, 255, 255);
+            font-size: 30px; 
+            height: 390px;
+            width: 310px;
+            transition: 0.7s ease-in;
+            border-radius: 7.5px;
+        }
+
+        .grid-item .container:hover{
+            height: 400px;
+            width: 320px;
+        }
+
+        .grid-item .dp{
+            max-width: 110%;
+            height: auto;
+        }
+
+        .grid-item .dp:hover{
+            height: 400px;
+            width: 650px;
+            box-shadow: 10px black;
+        }
+
+        #p1{
+            padding: 0px 30px 0px 30px;
+            text-align: justify;
+            font-size: 20px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        #p2{
+            padding: 0px 30px 0px 30px;
+            text-align: center;
+            font-size: 20px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        #title{
+            padding: 0px 30px 0px 30px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 500;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .profile{
+            height: 100px;
+            width: 85px;
+            border: 2.5px solid black;
+            border-radius: 5px;
+        }
+
+        .image1{
+            border: 2px solid black;
+            border-radius: 5px;
+            height: 200px;
+            width: 250px;
         }
     </style>
 </head>
 <body>
     <!--Header-->
     <header>
-        <div>Atul Enterprises</div>
-        <nav align="right">
+        <div>
+            Atul Enterprises
+        </div>
+        <nav>
             <a href="./index.html">&nbsp;Home&nbsp;</a>
-            <a href="./about.html">&nbsp;About&nbsp;</a>
-            <a href="./project.html">&nbsp;Projects&nbsp;</a>
-            <a href="./contact.html">&nbsp;Contact&nbsp;</a>
+            <a href="#about">&nbsp;About&nbsp;</a>
+            <a href="#projects">&nbsp;Projects&nbsp;</a>
+            <a href="#contact">&nbsp;Contact&nbsp;</a>
         </nav>
     </header>
     <!--Section-->
     <section>
-        <div class="container">
-            <div class="contact_container1">
-                <img src="./1.jpg" width="450" height="405" class="image">
-                <br>
+        <center>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="./img49.jpg" class="dp">
+                </div>
+                <div class="grid-item">
+                    <img src="./img38.jpg" class="dp">
+                </div>
             </div>
+        </center>
+        <br>
+                <fieldset>
+                    <legend>About</legend>
+                    <br>
+                    <center>
+                        <img src="./img31.jpg" class="profile">
+                    </center>
+                    <p id="p1">
+                        <br>
+                        Welcome to ATUL ENTERPRISES<br>
+                        Atul Enterprises established in 2017. Prior to this, the founder Mr. Atul Dandekar was into construction business with various reputed personalities in town in various Residential Projects in and around Palghar.
+                        <br>
+                        The long term vision of Atul Enterprises is to engage with the skilled workforce with the right blend to explore the ever growing real estate market in Palghar.
+                        <br>
+                        Atul Enterprises promises to cater to customers from all walks of life & strive to bring more members into Atul Enterprises Family. After all, we don't just built homes, we want to built "BETTER TOMORROW & create a happy community
+                        <br>
+                        Aspire to deliver not just a home with construction of walls but a light of hope. dreams & the happiness of families.
+                        <br>
+                        ONE MORE CONSTRUCTION BY US IN ASSOCIATION WITH JAYANT VISHNU DANDEKAR DANDEKAR'S GANDHAKOSH A PREMIUM RESIDENTIAL PROJECT OF 2BHK SPACIOUS FLATS ONLY NEAR BANK OF BARODA (OLD VIJAYA BANK), SONOPANT DANDEKAR MARG, PALGHAR (WEST) 401404.
+                        <br>
+                        The last decade brought in its wake various changes in people's psyche along with the changingtimes.
+                        <br>
+                        Changes in their Ufestyle were as inevitable.
+                        <br>
+                        Their minds & lifestyles evolved and it made us evolve too, making us adapt to their changing demands.
+                        <br>
+                        People now a days like to "work from home" so naturally requires Spacious Flats.
+                        <br>
+                        so we are here to serve you all that in "DANDEKAR'S GANDHAKOSH".
+                        <br>
+                        A PREMIUM RESIDENTIAL PROJECT.
+                        <br>
+                        MODERN ARCHITECTURE WITH SMART UTILISATION OF SPACE.
+                        <br>
+                        EXCELLENT CONNECTIVITY TO ALL DIRECTIONS IN & AROUND PALGHAR, ONE OF THE BEST IN TOWN LOCATION
+                        <br>
+                        SCHOOLS, HOSPITALS, SUPER MALLS, HOTELS & HANGOUTS NEARBY TO SUIT YOUR LIFESTYLE.
+                        <br>
+                        EVERY DAY AT DANDEKAR'S GANDHAKOSH WOULD BE AS FRESH & SWEET AS A FLOWER
+                        <br>
+                        RELAXING EVENINGS OR INDULGE IN A SHOPPING SPREE CLOSE BY CONNECTED TO CITY LIFE.
+                        <br>
+                        SERENE, STARRY, DREAMY NIGHTS...
+                        <br>
+                        A FRESH BREATH OF FRAGRANT AIR..
+                        <br>
+                        HAVE BEST LIFE AT DANDEKAR'S GANDHAKOSH
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset id="projects">
+                    <legend>Projects</legend>
+                    <center>
+                        <div class="grid-container">
+                            <div class="grid-item">
+                                <div class="container">
+                                    <img src="./1.jpg" class="image1">
+                                    <p>Dandekar Residency</p>
+                                    <a href="#">View More</a>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="container">
+                                    <img src="./img49.jpg" class="image1">
+                                    <p>GANDHAKOSH</p>
+                                    <a href="#">View More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </center>
+                </fieldset>
+                <br>
+                <fieldset id="contact">
+                    <legend>Developer</legend>
+                    <p id="title">
+                        Aakash Dandekar
+                    </p>
+                    <p id="p2">
+                        A First-Year Computer Science and Engineering student at Parul university.
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Contact</legend>
+                    <center>
+                        <div class="grid-container">
+                            <div class="grid-item">
+                                <p id="p1">
+                                    <b>
+                                        Address:
+                                    </b>
+                                    <br>
+                                    Atul Enterprises,<br>
+                                    Ground Floor,<br>
+                                    Swarajya Bhavan,<br>
+                                    OPP. Hotel Sadguru,<br>
+                                    Sonopant Dandekar Marg(Mahim Road),<br>
+                                    Palghar, Maharashtra - 401404
+                                </p>
+                            </div>
+                            <div class="grid-item">
+                                <p id="p1">
+                                    <b>
+                                        E-mail:
+                                    </b>
+                                    <a href="mailto:toatulenterprises@gmail.com">toatulenterprises@gmail.com</a>
+                                    <br>
+                                    <b>
+                                        Mobile:
+                                    </b>
+                                    98530095938
+                                </p>
+                            </div>
+                        </div>
+                        <p id="p2">
+                            <b>Location</b>
+                        </p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3756.3506906392477!2d72.76948517426844!3d19.69768823216359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be71ce9ad76a949%3A0xe135526a30abc09e!2sPalghar!5e0!3m2!1sen!2sin!4v1740288156198!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </center>
+                </fieldset>
         </div>
     </section>
-    <!--Footer-->
-    <div Class="footer">
-        <p align="center">
-            &copy; 2025 Atul Enterprises | All Rights Reserved
-        </p>
+    <!--footer-->
+    <div class="footer">
+        &copy; 2025 Atul Enterprises | All rights are reserved.
     </div>
 </body>
 </html>
