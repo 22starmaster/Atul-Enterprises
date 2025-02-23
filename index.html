@@ -23,15 +23,24 @@
         }
 
         iframe{
-            border: 2px solid black;
             border-radius: 10px;
+        }
+
+        .grid-container1{
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            width: 80%;
+            height: 80%;
+            background-color: white;
         }
 
         .grid-container{
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1 fr 1fr;
-            gap: 30px;
+            justify-content: center;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 25px;
             width: 80%;
             height: 80%;
             background-color: white;
@@ -57,8 +66,8 @@
         }
 
         .grid-item .container:hover{
-            height: 400px;
-            width: 320px;
+            height: 405px;
+            width: 325px;
         }
 
         .grid-item .dp{
@@ -111,12 +120,20 @@
         fieldset{
         background-color: #ffffff;
         }
+
+        .icon{
+            height: 65px;
+            width: 110px;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
     <!--Header-->
     <header>
         <div>
+            <img src="./6.jpg" class="icon" alt="Image Failed to Load!!">
             Atul Enterprises
         </div>
         <nav>
@@ -183,7 +200,7 @@
             </fieldset>
             <br>
             <center>
-                <div class="grid-container">
+                <div class="grid-container1">
                     <div class="grid-item">
                         <img src="./img49.jpg" class="dp">
                     </div>
@@ -211,6 +228,13 @@
                                 <a href="#">View More</a>
                             </div>
                         </div>
+                        <div class="grid-item">
+                            <div class="container">
+                                <img src="./1.jpg" class="image1">
+                                <p>Other Projects In Association</p>
+                                <a href="#">View More</a>
+                            </div>
+                        </div>
                     </div>
                 </center>
             </fieldset>
@@ -218,7 +242,7 @@
             <fieldset id="contact">
                 <legend>&nbsp;Contact&nbsp;</legend>
                 <center>
-                    <div class="grid-container">
+                    <div class="grid-container1">
                         <div class="grid-item">
                             <p id="p1">
                                 <b>
