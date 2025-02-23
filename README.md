@@ -1,2 +1,0 @@
-# Atul-Enterprises
-N/A
